@@ -185,73 +185,76 @@ Summarize it into 5 key steps and create clear instructions for each step.
 #### Step 1: Implement the basic structure and core features
 
 ```
-Build the basic structure of the todo app.
+Step 1: Implement basic structure and core functions
+Create the basic structure of a to-do management app.
 
 Requirements:
-1. Three files: index.html, style.css, script.js
+1. Consist of three files: index.html, style.css, script.js
 2. HTML structure:
    - App title "My Tasks"
-   - Task input (input field + add button)
-   - A container to display the task list
+   - To-do input field (input + add button)
+   - Container to display the to-do list
 3. JavaScript features:
-   - Add tasks (support both Enter key and button click)
-   - Delete tasks (an X button on each item)
-   - Toggle complete/incomplete with a checkbox
-   - Apply strikethrough styling to completed tasks
-4. Save data to localStorage:
-   - Auto-save on add/delete/completion changes
-   - Persist data across page refreshes
+   - Add to-do (support both Enter key and button click)
+   - Delete to-do (X button for each item)
+   - Toggle complete/incomplete with checkbox
+   - Change style when completed
+4. Store data in localStorage
+   - Automatically save when adding/deleting/changing completion status
+   - Keep data when page is refreshed
 5. Basic CSS styling:
    - Clean card-style layout
-   - Centered, max width 600px
+   - Center alignment, max width 600px
    - Hover effects and transitions
 
-Store each task as { id, text, completed, createdAt }.
+Store each to-do with the structure { id, text, completed, createdAt }.
 ```
 
 #### Step 2: Add category functionality and improve the UI
 
 ```
-Add a category feature to the existing code and improve the UI.
+Step 2: Category function and UI improvement
+Add category functionality to the existing code and improve the UI.
 
 Requirements:
-1. Category feature:
-   - Three categories: Work, Personal, Study
-   - A category dropdown when adding a task
-   - A colored category tag on each task item
+1. Category function:
+   - Three categories: work, personal, study
+   - Category selection dropdown when adding a task
+   - Display category color tag on each task item
    - Category filter buttons (All/Work/Personal/Study)
-2. UI improvements:
+2. UI improvement:
    - Category colors: Work (blue #4A90E2), Personal (green #27AE60), Study (purple #8E44AD)
-   - Place the filter buttons at the top
-   - Highlight the selected filter button
-   - Show the creation time on each task (e.g., "2 hours ago")
-3. Data structure updates:
-   - Add a category field
-   - Save the filter state to localStorage as well
+   - Selected button has a border
+   - Highlight background of selected button
+   - Display creation time on task item (e.g., '2 hours ago')
+3. Data structure update:
+   - Add category field
+   - Save the filter state in localStorage as well
 
-Automatically sort completed items to the bottom of the list.
+Sort completed items automatically to the bottom of the list.
 ```
 
 #### Step 3: Add a progress dashboard
 
 ```
-Add a progress dashboard and implement inline editing.
+Step 3: Add a progress dashboard
+Add a progress dashboard and implement inline edit functionality.
 
 Requirements:
 1. Progress dashboard:
-   - Add a stats section at the top of the app
-   - Overall progress: "5/10 done (50%)" format + a progress bar
-   - Mini progress indicators per category (completed/total for each)
+   - Add a statistics section at the top of the app
+   - Overall progress: '5/10 completed (50%)' format + progress bar
+   - Show mini progress by category (completed/total for each category)
    - Show the number of tasks added today
-2. Inline editing:
-   - Double-click a task's text to enter edit mode
-   - It becomes an input field so it can be edited
-   - Enter saves, ESC cancels
-   - A select box so the category can also be changed while editing
-3. UI animations:
-   - Smooth transitions for the progress bar
-   - Fade animations when adding/deleting items
-   - Slide animation when marking complete
+2. Inline edit functionality:
+   - Edit mode on double-clicking a task
+   - Change to input field for editing
+   - Save with Enter, cancel with ESC
+   - Selectable box to change category during editing
+3. UI animation:
+   - Smooth transition effect for progress bar
+   - Fade animation when adding/deleting items
+   - Slide animation when checking complete
 
 The dashboard must update in real time.
 ```
@@ -259,25 +262,26 @@ The dashboard must update in real time.
 #### Step 4: Dark Mode and Advanced Features
 
 ```
+Step 4: Dark mode and advanced features
 Implement dark mode and additional features.
 
 Requirements:
 1. Dark mode:
-   - A dark/light mode toggle switch in the top right
-   - Dark mode colors: background (#1A1A1A), cards (#2D2D2D), text (#E0E0E0)
-   - Save the selected theme to localStorage
-   - Smooth transition animation
+   - Dark/Light mode toggle switch at the top right
+   - Dark mode colors: background (#1A1A1A), card (#2D2D2D), text (#E0E0E0)
+   - Save selected theme in localStorage
+   - Animation when switching modes
 2. Additional features:
-   - "Clear all completed" button (with a confirmation dialog)
-   - Task search (real-time filtering)
-   - A badge showing the number of remaining tasks
-   - Empty state message ("No tasks yet. Add one!")
+   - Delete all completed items button (including confirmation dialog)
+   - Task search function (real-time filtering)
+   - Show delete button after task completion
+   - Empty state message ('No tasks. Try adding some!')
 3. Keyboard shortcuts:
-   - Alt+N: focus the new task input
-   - Alt+1,2,3,4: switch category filters
-   - Alt+D: toggle dark mode
+   - Alt+N: Focus new task input field
+   - Alt+1,2,3,4: Switch category filter
+   - Alt+D: Toggle dark mode
 4. Responsive design:
-   - Optimized for mobile (max-width: 480px)
+   - Optimize for mobile (max-width: 480px)
    - Touch-friendly button sizes
 
 Provide appropriate feedback for every interaction.
@@ -286,30 +290,31 @@ Provide appropriate feedback for every interaction.
 #### Step 5: Final completion and optimization
 
 ```
-Finish the app and maximize its usability.
+Step 5: Final completion and optimization
+Complete the app and maximize usability.
 
 Requirements:
-1. Data export/import:
-   - Export data as JSON via a button
+1. Export/Import Data:
+   - Button to export data in JSON format
    - Import data via file upload
-   - Confirm a backup of current data before importing
+   - Check backup of current data before importing
 2. Sorting options:
-   - Sort by creation date, category, or completion status
-   - Persist the sort state
-   - Manual reordering via drag and drop (sortable)
+   - Sort by creation date, category, completion status
+   - Save sorting state
+   - Manual sorting by drag and drop (sortable)
 3. Performance optimization:
-   - Smooth performance even with 100+ items
+   - Smooth performance even with more than 100 items
    - Apply debouncing (search, save)
    - Efficient DOM manipulation
 4. Accessibility improvements:
    - Add ARIA labels
    - Focus management
    - Screen reader support
-5. Extra improvements:
-   - Warn about duplicate tasks
+5. Additional improvements:
+   - Duplicate to-do warning
    - Undo for recently deleted items
-   - Show a random daily quote
-   - Encouraging messages based on the completion rate
+   - Random quote of the day
+   - Encouragement message based on completion rate
 
 Handle all edge cases and add error handling.
 Add detailed comments to the code.
