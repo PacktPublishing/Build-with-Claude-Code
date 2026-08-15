@@ -13,7 +13,7 @@ Copy and paste the prompts for each chapter as you follow along with the book.
 - [Chapter 5: Systematic Development and Management Through Game Building](#chapter-5-systematic-development-and-management-through-game-building)
 - [Chapter 6: Giving Claude Code Wings with APIs](#chapter-6-giving-claude-code-wings-with-apis)
 - [Chapter 7: Building a Development Team with Claude Code AI Agents](#chapter-7-building-a-development-team-with-claude-code-ai-agents)
-- [Chapter 8: Going Beyond Claude Code's Limits with MCP](#chapter-8-going-beyond-claude-codes-limits-with-mcp)
+- [Chapter 8: Extending Claude Code with MCP, Skills, and Plugins](#chapter-8-extending-claude-code-with-mcp-skills-and-plugins)
 
 ---
 
@@ -787,7 +787,7 @@ The qa-engineer should test to ensure everything works smoothly in various scena
 
 ---
 
-### Chapter 8: Going Beyond Claude Code's Limits with MCP
+### Chapter 8: Extending Claude Code with MCP, Skills, and Plugins
 
 #### Installing and Using MCP Servers
 
@@ -797,14 +797,14 @@ claude mcp add --transport http notion https://mcp.notion.com/mcp
 ```
 
 ```
-Search for and summarize the latest Claude Code updates and changes. Then save the results to Notion using the Notion MCP.
+Summarize the latest changes in Claude Code and save them to 'Self-Study Vibe Notion Example' via Notion MCP.
 ```
 
 **Sequential Thinking MCP:**
 
 When running in Windows **PowerShell**:
 ```powershell
-claude mcp add sequential-thinking -s local -- npx @modelcontextprotocol/server-sequential-thinking@latest
+claude mcp add sequential-thinking -s local -- npx -y @modelcontextprotocol/server-sequential-thinking@latest
 ```
 
 (Reference) When running in the Windows Command Prompt (cmd):
@@ -813,65 +813,56 @@ claude mcp add sequential-thinking -s local -- cmd /c npx -y @modelcontextprotoc
 ```
 
 ```
-I want to double the average time visitors spend on my web portfolio. Write two documents.
-1. Come up with a plan to achieve this goal and save it to Notion via the Notion MCP as 'Increasing Dwell Time'.
-2. Use the Sequential Thinking MCP to develop a systematic plan for the same goal and save it to Notion via the Notion MCP as 'Increasing Dwell Time - Systematic Plan'.
+I want to double the time visitors spend on my web portfolio. Please create two documents:
+1. Devise a way to achieve this goal and use the Notion MCP to save it as "Increase Dwell Time".
+2. Use the Sequential Thinking MCP to systematically devise a way to achieve this goal, and then use the Notion MCP to save it as "Increase Dwell Time – Systematic Structure".
 ```
 
-**Context7 MCP server:**
-```bash
-claude mcp add --transport http context7 https://mcp.context7.com/mcp --header "CONTEXT7_API_KEY: YOUR_API_KEY"
+**Creating a skill:**
+```
+Create a skill that automatically reviews code.
+```
+
+**Recommending skills, MCP, and plugins:**
+```
+Recommend skills, MCP, or plugins needed for the current project.
 ```
 
 
-**Playwright MCP:**
+**Playwright plugin:**
 
-When running in Windows **PowerShell**:
-```powershell
-claude mcp add playwright -- npx @playwright/mcp@latest
-```
-
-(Reference) When running in the Windows Command Prompt (cmd):
-```cmd
-claude mcp add playwright -- cmd /c npx @playwright/mcp@latest
-```
+Run the `/plugin` command in Claude Code, find **Playwright** in the list, and select **Install for all collaborators on this repository (project scope)**.
 
 ```
-Build a shopping list app. Make it a simple web UI with add, delete, and check-off features that runs in the local browser.
+Create a shopping list app. Make it a simple web UI that can add, delete, and check items, and runs locally in the browser.
 ```
 
 ```
-Use the Playwright MCP to automatically test every feature of this shopping list app. Verify that adding, deleting, and checking off items all work correctly.
+Automatically test all the features of this shopping list app. Please check that adding, deleting, and checking items all work correctly.
 ```
 
 **GitHub MCP:**
 ```bash
-claude mcp add --transport http github https://api.githubcopilot.com/mcp -H 'Authorization: Bearer $(grep GITHUB_PAT .env | cut -d '=' -f2)'
+claude mcp add --transport http github https://api.githubcopilot.com/mcp -H "Authorization: Bearer YOUR_GITHUB_PAT"
 ```
 
 ```
-I want to save the shopping list app in the current folder to GitHub. Use the GitHub MCP to create a repository named shopping-listapp and upload it.
+I want to save the shopping list app created in the current folder to GitHub. Use github mcp to create a repository named shopping-list-app and upload it.
 ```
 
 **Vercel:**
 ```
-Rename the shopping list app's shopping -list.html file to index.html and upload it to GitHub.
+Rename the shopping-list.html file of the shopping list app to index.html and upload it to GitHub.
 ```
 
 **Supabase MCP:**
 
-When running in Windows **PowerShell**:
-```powershell
-claude mcp add --transport http supabase "https://mcp.supabase.com/mcp"
-```
-
-(Reference) When running in the Windows Command Prompt (cmd):
-```cmd
+```bash
 claude mcp add supabase -s local -e SUPABASE_ACCESS_TOKEN=<Supabase API token> -- cmd /c npx -y @supabase/mcp-server-supabase@latest
 ```
 
 ```
-Use the Supabase MCP to connect our shopping list app to a database. Create a table named shopping_items, and modify the code so the data currently stored in local storage is saved to the Supabase database instead. When the changes are done, commit and push to GitHub.
+Use Supabase MCP to connect our shopping list app to the database. Create a table called shopping_items, and modify the code so that the data previously stored in local storage is now saved to the Supabase database. Once the changes are complete, commit and push to GitHub.
 ```
 
 ---
