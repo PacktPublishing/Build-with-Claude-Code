@@ -728,7 +728,7 @@ Create a subagent called code-bug-analyzer that works only in this project. It i
 ```
 
 ```
-Have code-bug-analyzer review the code of the 'Please Take Care of My Refrigerator' application.
+Have code-bug-analyzer review the code of the FridgeChef application.
 ```
 
 **System optimization engineer agent:**
@@ -744,7 +744,7 @@ Create a third subagent called ux-design-advisor. It is a user experience design
 #### Multi-Agent Collaboration
 
 ```
-Have code-bug-analyzer review the entire 'Please Take Care of My Refrigerator' application code, then have performance-optimizer fix the identified issues and optimize performance, and finally have ux-design-advisor improve the user experience.
+Have code-bug-analyzer review the entire FridgeChef application code, then have performance-optimizer fix the identified issues and optimize performance, and finally have ux-design-advisor improve the user experience.
 ```
 
 ```
