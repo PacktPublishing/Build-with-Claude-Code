@@ -138,7 +138,7 @@ Hello! Please describe what features you have.
 #### 03-2: Building a Handwriting Recognition Program
 
 ```
-Create and run code that recognizes numbers entered as handwriting. Please write all code and comments in English.
+Create and run code that recognizes numbers entered as handwriting.
 ```
 
 ```
