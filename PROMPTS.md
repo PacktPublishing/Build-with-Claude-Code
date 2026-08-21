@@ -148,10 +148,6 @@ Make it so I can run the digit recognition program by clicking it in Windows Exp
 #### 03-3: Expanding the Program with CLAUDE.md
 
 ```
-# From now on, add the date and time as a comment in every file you create.
-```
-
-```
 I want to develop the handwriting recognition program as both a web version and a desktop version. Please create the web_version and desktop_version folders, and generate a CLAUDE.md file for each folder.
 ```
 
@@ -347,17 +343,17 @@ Please analyze the files in the @web_version folder and check if the to-do app i
 #### 05-1 Creating reliable AI content
 
 ```
-I want to build a general knowledge quiz game. Write a PRD.
-Game rules:
-- Four-option multiple choice quiz
+I want to create a general knowledge quiz game. Please write a PRD.
+Game Rules:
+- Multiple-choice quiz with four options
 - Categories: History, Science, Geography, Arts & Culture
-- 10 questions per category, 40 questions total
-- Instant feedback on correct/incorrect answers
-- Final score and ranking records
+- 10 questions per category, total of 40 questions
+- Immediate feedback on correct/incorrect answers
+- Record final score and ranking
 ```
 
 ```
-Based on the PRD, organize the general knowledge quiz game into 3 step-by-step prompts I can implement with Claude Code.
+Summarize the 3-phase project based on the PRD so that the general knowledge quiz game can be implemented with Claude Code.
 ```
 
 #### Step 1: Core Quiz System
@@ -564,85 +560,81 @@ Checklist for every question you write
 ```
 
 ```
-Show me the contents of this project's CLAUDE.md.
+Please check the contents of the current project's CLAUDE.md.
 ```
 
 ```
-Review the questions created so far against the guidelines we just saved. If any quiz questions or answers don't meet the guidelines, fix them accordingly.
+Please review the questions created so far with reference to the guidelines you just saved. If there are any quizzes or answers that do not comply with the guidelines, please revise them accordingly.
 ```
 
 #### 05-2 Boosting development efficiency through automation
 
 ```
-Create a custom commands folder for the current project.
-Create the .claude/commands directory and show me the structure.
+Create a custom command folder for the current project.
+Create the .claude/commands directory and show the structure.
 ```
 
 ```
-Create the file .claude/commands/quiz-validate.md.
-Find any quiz questions containing superlative expressions such as 'most', 'first', or 'largest', and show them as a list.
+Create a .claude/commands/quiz-validate.md file.
+Find any superlative expressions such as 'most', 'first', or 'largest' in the quiz questions and display them as a list.
 ```
 
 ```
 Modify .claude/commands/quiz-validate.md as follows.
-If the user specifies a category, validate only that category's questions;
-if not, validate all questions.
-Use the value passed in $ARGUMENTS as the category.
-During validation, look for ambiguous expressions such as 'most', 'first', or 'largest'
-and explain which criteria need to be stated.
+If the user specifies a category, validate only the questions in that category; if not specified, validate all questions.
+Use the value entered in $ARGUMENTS as the category.
+When validating, check for ambiguous expressions such as 'most', 'first', or 'maximum', and indicate what criteria need to be specified.
 ```
 
 ```
 Create .claude/commands/quiz-range.md.
-Build a feature that reviews questions from number $1 to number $2.
-Have it check question difficulty and answer distribution.
+Create a function to review questions from $1 to $2.
+Make it possible to check the difficulty and answer distribution of the questions.
 ```
 
 ```
 Create .claude/commands/quiz-add.md.
-Build a command that adds a new quiz question.
-Take $1 as the category and $2 as the difficulty.
-Match the format of the existing questions, and make sure it strictly follows the verification guidelines.
+Create a command to add new quizzes.
+Receive $1 as the category and $2 as the difficulty, and process them.
+Make it in the same format as the existing quizzes, and ensure that the verification guidelines are strictly followed.
+Continue while checking the intermediate steps.
 ```
 
 #### 05-3 Maintenance strategies learned through the use of custom commands
 
 ```
-Create .claude/commands/quiz-check.md.
-It should verify the accuracy of every question's answer.
-Create .claude/commands/quiz-stats.md.
-It should manage the quiz game's statistics.
-Create .claude/commands/quiz-leaderboard.md.
-It should manage the ranking system.
+Create .claude/commands/quiz-check.md. It should perform the function of verifying the accuracy of all quiz answers.
+Create .claude/commands/quiz-stats.md. It should perform the function of managing quiz game statistics.
+Create .claude/commands/quiz-leaderboard.md. It should perform the function of managing the ranking system.
 ```
 
 ```
-Use /quiz-check to verify all questions, /quiz-stats to analyze statistics, and /quiz-leaderboard to update the leaderboard—all in a single request.
+Use /quiz-check to verify all questions, /quiz-stats to analyze statistics, and /quiz-leaderboard to update the leaderboard, all in a single request.
 ```
 
 ```
-Create .claude/commands/quiz-daily.md and make it perform the following tasks in order.
-1. Read and understand the structure of the file containing the quiz questions
-2. Check the current question count and distribution
-3. Identify gaps in each category
+.claude/commands/quiz-daily.md Create it and perform the following tasks in order.
+1. Read and understand the structure of the file containing the quizzes
+2. Check the current number and distribution of questions
+3. Identify insufficient parts by category
 4. Check for duplicates before adding new questions
 5. Validate the format after adding questions
 6. Back up all data
-7. Report the results in detail
-Verify each step, and if any step fails, stop immediately and report the error.
+7. Report detailed execution results
+Verify at each step, and if it fails, stop immediately and report the error.
 ```
 
 ```
-Now I want to build a teacher mode that shows and compares the scores of multiple students who took the quiz at a glance.
-Design and create the custom commands needed for this feature yourself.
-Also create an integrated command that runs all of them together.
-Every command must be saved as its own .md file inside the '.claude/commands/' folder.
-When you're done, report the custom commands you created and what each one does.
+Now I want to create a teacher mode that allows you to view and compare the scores of multiple students who have taken the quiz at a glance.
+Please devise and create the custom commands needed for this feature.
+And please also create an integrated command that collects and executes these commands together.
+All commands must be saved as .md files in the '.claude/commands/' folder.
+After execution, list and report the created custom commands and their functions.
 ```
 
 ```
-Modify .claude/commands/create-report.md as follows.
-Change the grade display to relative grading based on percentile, shown like this:
+Please modify .claude/commands/create-report.md as follows.
+Change the grade display to a relative evaluation based on the top percentage and display it as follows.
 - Top 20%: A
 - Top 40%: B
 - Top 70%: C
@@ -660,29 +652,29 @@ and add this command to teacher-dashboard.md.
 ### Chapter 6: Giving Claude Code Wings with APIs
 
 ```
-I've saved my OpenRouter API key in a .env file. Set things up so this key can be used safely.
+I saved the API key I received from OpenRouter in the .env file. Please set it up so I can use this key securely.
 ```
 
 ```
-Now test that the prepared API actually works.
-Use the google/gemma-4-26b-a4b-it:free model for image recognition,
-and the openai/gpt-oss-20b:free model for text.
-Test both text and image recognition through the API and report the results.
+Now test whether the prepared API actually works.
+For image recognition, use the google/gemma-4-26b-a4b-it:free model,
+For text generation, use the openai/gpt-oss-20b:free model.
+Test both text and image recognition via the API and let me know the results.
 ```
 
 #### Building the FridgeChef App (3 Steps)
 
 
 ```
-Using the OpenRouter API we set up earlier, I want to build a web application that recognizes ingredients in a fridge photo and recommends recipes. Split it into 3 steps and write a PRD for each.
-Step 1 takes an image as input and recognizes it using the google/gemma-4-26b-a4b-it:free model.
-Step 2 generates recipes from the Step 1 results using the openai/gpt-oss-20b:free model.
-Step 3 creates user profiles and saves recipes.
-Save the steps as PRD_step1.md, PRD_step2.md, and PRD_step3.md.
+Using the previously created OpenRouter API, I want to build a web application that recognizes ingredients from a refrigerator photo and recommends recipes. Please create a PRD divided into three steps as follows.
+Step 1: Receive an image as input and use the google/gemma-4-26b-a4b-it:free model to recognize the image.
+Step 2: Use the information obtained in Step 1 and the openai/gpt-oss-20b:free model to generate recipes.
+Step 3: Create a user profile and save the recipes.
+Save each step as PRD_step1.md, PRD_step2.md, and PRD_step3.md.
 ```
 
 ```
-Execute PRD_step1.md.
+Run PRD_step1.md
 ```
 
 ```
@@ -697,23 +689,19 @@ and the recognized ingredients in a two-column grid rather than a stack of expan
 ```
 
 ```
-Run the main application and test the Step 1 results.
+Run the main application and let me test the results of Step 1.
 ```
 
 ```
-Now execute PRD_step2.md.
+Now run PRD_step2.md.
 ```
 
 ```
-Run the main application so I can test the Step 2 results.
+Run the main application and test the results of step 2.
 ```
 
 ```
-Now execute PRD_step3.md.
-```
-
-```
-Run the main application so I can test the Step 3 results.
+Now run PRD_step3.md.
 ```
 
 ---
@@ -724,7 +712,7 @@ Run the main application so I can test the Step 3 results.
 
 **Code quality reviewer agent:**
 ```
-Create a subagent called code-bug-analyzer that works only in this project. It is a code quality reviewer that checks for bugs, coding rule violations and performance problems. Give it read-only access only, and run it on opus. Save it as .claude/agents/code-bug-analyzer.md
+Create a subagent called code-bug-analyzer that works only in this project. It is a code quality reviewer that checks for bugs, coding rule violations, and performance problems. Give it read-only access, and run it on Opus. Save it as .claude/agents/code-bug-analyzer.md
 ```
 
 ```
@@ -781,7 +769,7 @@ Finally, the QA engineer should test the application to ensure it functions smoo
 We're going to create a web application where you can upload a PDF document and the AI will summarize it.
 First, product-manager-prd will write a detailed PRD and feature specifications for the PDF document summary app and then the backend-architect will implement the PDF file upload and text extraction features.
 The ai-integration-specialist will integrate the OpenRouter API to summarize the extracted text.
-Use the free openai/gpt-oss-20b:free model, and use the API key stored in the '.env' file in the current folder. The frontend-developer will implement a drag-and-drop file upload UI and a clean interface to display the summary results,
+Use the free openai/gpt-oss-20b:free model, and use the API key stored in the '.env' file in the current folder. The frontend-developer will implement a drag-and-drop file upload UI and a clean interface to display the summary results.
 The qa-engineer should test to ensure everything works smoothly in various scenarios. If any issues are found, fix them completely, and create the final version as an 'index_pdf.html' file that can be opened directly in the browser.
 ```
 
@@ -838,7 +826,7 @@ Create a shopping list app. Make it a simple web UI that can add, delete, and ch
 ```
 
 ```
-Automatically test all the features of this shopping list app. Please check that adding, deleting, and checking items all work correctly.
+Automatically test all the features of this shopping list app. Please check that adding, deleting, and checking all items work correctly.
 ```
 
 **GitHub MCP:**
