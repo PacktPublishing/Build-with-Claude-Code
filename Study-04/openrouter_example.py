@@ -20,7 +20,7 @@ def _headers() -> dict:
     return {
         "Authorization": f"Bearer {Config.OPENROUTER_API_KEY}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "https://github.com/PacktPublishing/Claude-Code-in-Action",
+        "HTTP-Referer": "https://github.com/PacktPublishing/Build-with-Claude-Code",
         "X-Title": "FridgeChef Smoke Test",
     }
 

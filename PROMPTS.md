@@ -1,4 +1,4 @@
-# Claude Code in Action — Prompt Collection
+# Build with Claude Code — Prompt Collection
 
 Copy and paste the prompts for each chapter as you follow along with the book.
 

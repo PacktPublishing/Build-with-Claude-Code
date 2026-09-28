@@ -15,7 +15,7 @@ class Config:
     # --- App identity ---
     APP_NAME = "FridgeChef"
     APP_VERSION = "2.0"
-    APP_URL = "https://github.com/PacktPublishing/Claude-Code-in-Action"
+    APP_URL = "https://github.com/PacktPublishing/Build-with-Claude-Code"
 
     # --- OpenRouter ---
     OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
