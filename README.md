@@ -18,7 +18,7 @@
     <tr>
       <td align="center">
         <a href="https://vibecoding-eng-ch03.vercel.app/">
-          <img src="images/preview-ch03-4.jpg" alt="Chapter 3 example: Handwritten Digit Recognition" width="250">
+          <img src="images/preview-ch03-4b.jpg" alt="Chapter 3 example: Handwritten Digit Recognition" width="250">
         </a>
         <br>
         <strong>Chapter 3: Handwritten Digit Recognition</strong>
