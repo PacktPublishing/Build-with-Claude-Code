@@ -18,21 +18,21 @@
     <tr>
       <td align="center">
         <a href="https://vibecoding-eng-ch03.vercel.app/">
-          <img src="images/ch03.jpg" alt="Chapter 3 example: Handwritten Digit Recognition" width="250">
+          <img src="images/preview-ch03.jpg" alt="Chapter 3 example: Handwritten Digit Recognition" width="250">
         </a>
         <br>
         <strong>Chapter 3: Handwritten Digit Recognition</strong>
       </td>
       <td align="center">
         <a href="https://vibecoding-eng-ch06.vercel.app/">
-          <img src="images/ch06.jpg" alt="Chapter 6 example: FridgeChef" width="250">
+          <img src="images/preview-ch06.jpg" alt="Chapter 6 example: FridgeChef" width="250">
         </a>
         <br>
         <strong>Chapter 6: FridgeChef</strong>
       </td>
       <td align="center">
         <a href="https://vibecoding-eng-ch07.vercel.app/">
-          <img src="images/ch07.jpg" alt="Chapter 7 example: AI Empathy Diary" width="250">
+          <img src="images/preview-ch07.jpg" alt="Chapter 7 example: AI Empathy Diary" width="250">
         </a>
         <br>
         <strong>Chapter 7: AI Empathy Diary</strong>
