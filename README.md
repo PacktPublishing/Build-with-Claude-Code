@@ -57,39 +57,19 @@
 
 <img src="images/vibeindex-logo.png" alt="Vibe Index" width="200">
 
-**All vibe coding resources in one place**
+**The resource directory you use in Chapter 8**
 
 <a href="https://www.vibeindex.ai/">
   <img src="images/vibeindex.png" alt="Vibe Index" width="380">
 </a>
 
-Skills, plugins, and MCP servers collected in real time,<br>
+Vibe Index collects skills, plugins, and MCP servers for Claude Code in real time,<br>
 with summaries and category-based organization.
 
+In Chapter 8 you use it to install the Notion and GitHub MCP servers,<br>
+the <code>vibeindex</code> skill, and the <code>anthropics-skills</code> marketplace and its plugins.
+
 👉 **[Visit Vibe Index](https://www.vibeindex.ai/)**
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<table align="center">
-<tr>
-<td align="center" valign="top" width="600">
-
-<img src="images/vixcode-logo.svg" alt="Vix Code" width="200">
-
-**A free vibe coding tool for learners**
-
-<a href="https://www.vibeindex.ai/vixcode">
-  <img src="images/vixcode-cli.png" alt="Vix Code CLI" width="380">
-</a>
-
-Practice for free with the same interface as Claude Code.<br>
-Direct file editing, terminal, and Git integration included.
-
-👉 **[Try Vix Code](https://www.vibeindex.ai/vixcode)**
 
 </td>
 </tr>
@@ -218,6 +198,8 @@ Direct file editing, terminal, and Git integration included.
   - Upgrading the shopping list app into a real service
 
 > **Example**: Shopping list app [🎯 Live demo](https://vibecoding-eng-ch08.vercel.app) — Playwright automated testing → GitHub upload → Vercel deployment → Supabase database integration for a production-ready service
+>
+> **Companion site**: [Vibe Index](https://www.vibeindex.ai/), where this chapter finds and installs its MCP servers, skills, and plugins
 
 ---
 
