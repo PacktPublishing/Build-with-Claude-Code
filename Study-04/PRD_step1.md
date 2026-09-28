@@ -16,7 +16,7 @@ Let a user upload a photo of the inside of their fridge and get back a clean, ca
 ## 3. Technical direction
 
 - **UI**: Streamlit, two columns (upload on the left, result on the right)
-- **Vision model**: `google/gemma-4-26b-a4b-it:free` on OpenRouter
+- **Vision model**: `google/gemma-4-26b-a4b-it` on OpenRouter
 - **API key**: read from `.env` through `python-dotenv`, never hard-coded
 - **Image handling**: Pillow; downscale the longest side to 1024 px and re-encode as JPEG before sending
 
@@ -44,7 +44,7 @@ backend/image_service.py   validation, resizing, response parsing
 |---|---|
 | Missing API key | "OPENROUTER_API_KEY is not set..." |
 | 401 from OpenRouter | "Invalid API key. Check OPENROUTER_API_KEY in your .env file." |
-| 429 from OpenRouter | "Free-tier limit reached. Wait a moment and try again." |
+| 429 from OpenRouter | "Rate limit reached. Wait a moment and try again." |
 | Unsupported file type | "Unsupported format. Please upload one of: JPG, JPEG, PNG, WEBP." |
 
 ## 7. Done when

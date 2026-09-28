@@ -25,7 +25,7 @@ def sidebar() -> None:
         st.caption("Step 1 - Ingredient recognition")
         st.divider()
         st.markdown(f"**Vision model**  \n`{Config.IMAGE_RECOGNITION_MODEL}`")
-        st.caption("A free model on OpenRouter. No credit card required.")
+        st.caption("A paid model on OpenRouter. One run costs a fraction of a cent.")
         st.divider()
         if st.button("Test API connection", use_container_width=True):
             try:
@@ -78,7 +78,7 @@ def main() -> None:
     if photo is None:
         steps_strip([
             ("Upload", "A photo of your open fridge."),
-            ("Recognize", "A free vision model reads it."),
+            ("Recognize", "A vision model reads it."),
             ("Collect", "Ingredients, grouped and ready."),
         ])
 

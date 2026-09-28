@@ -190,7 +190,7 @@ Response rules:
 
                 // Handle rate limit errors
                 if (response.status === 429) {
-                    throw new Error('The free AI server is currently experiencing heavy traffic. Please try again shortly.');
+                    throw new Error('The AI server is currently experiencing heavy traffic. Please try again shortly.');
                 }
 
                 throw new Error(`Server error: ${response.status} - ${errorData.error || response.statusText}`);

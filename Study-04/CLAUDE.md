@@ -4,7 +4,7 @@ A Streamlit web app that recognizes ingredients in a fridge photo and generates 
 
 ## Stack
 
-- **Image recognition**: `google/gemma-4-26b-a4b-it:free` (via OpenRouter)
+- **Image recognition**: `google/gemma-4-26b-a4b-it` (via OpenRouter, paid)
 - **Recipe generation**: `openai/gpt-oss-20b` (via OpenRouter, paid)
 - **UI**: Streamlit
 - **Storage**: SQLite (recipes) + JSON files (users, profiles, saved recipes)

@@ -357,7 +357,7 @@ class FridgeRecipeApp {
                 errorMessage = '❌ The image is too large. Please use a smaller image.';
                 toastMessage = 'The image is too large.';
             } else if (error.message.includes('heavy traffic')) {
-                errorMessage = '❌ The free AI server is currently experiencing heavy traffic.<br/>⏰ Please try again shortly.';
+                errorMessage = '❌ The AI server is currently experiencing heavy traffic.<br/>⏰ Please try again shortly.';
                 toastMessage = 'The server is busy. Please try again shortly.';
             } else {
                 errorMessage += ' Please try again shortly.';

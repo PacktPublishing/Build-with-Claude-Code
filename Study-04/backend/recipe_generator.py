@@ -110,7 +110,7 @@ class RecipeGenerator:
 # small parsing helpers
 # --------------------------------------------------------------------- #
 def clean_text(text: str) -> str:
-    """Drop stray characters that free models occasionally emit.
+    """Drop stray characters that small models occasionally emit.
 
     A single hallucinated CJK glyph in the middle of an English recipe looks
     like a bug to the reader, so anything outside the Latin range is removed

@@ -657,7 +657,7 @@ I saved the API key I received from OpenRouter in the .env file. Please set it u
 
 ```
 Now test whether the prepared API actually works.
-For image recognition, use the google/gemma-4-26b-a4b-it:free model,
+For image recognition, use the google/gemma-4-26b-a4b-it model,
 For text generation, use the openai/gpt-oss-20b model.
 Test both text and image recognition via the API and let me know the results.
 ```
@@ -667,7 +667,7 @@ Test both text and image recognition via the API and let me know the results.
 
 ```
 Using the previously created OpenRouter API, I want to build a web application that recognizes ingredients from a refrigerator photo and recommends recipes. Please create a PRD divided into three steps as follows.
-Step 1: Receive an image as input and use the google/gemma-4-26b-a4b-it:free model to recognize the image.
+Step 1: Receive an image as input and use the google/gemma-4-26b-a4b-it model to recognize the image.
 Step 2: Use the information obtained in Step 1 and the openai/gpt-oss-20b model to generate recipes.
 Step 3: Create a user profile and save the recipes.
 Save each step as PRD_step1.md, PRD_step2.md, and PRD_step3.md.

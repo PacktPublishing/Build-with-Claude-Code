@@ -21,8 +21,8 @@ class Config:
     OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
     OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
-    # OpenRouter models (verified September 2026): free vision model, paid text model
-    IMAGE_RECOGNITION_MODEL = "google/gemma-4-26b-a4b-it:free"
+    # Paid OpenRouter models (verified September 2026); a full run costs well under a cent
+    IMAGE_RECOGNITION_MODEL = "google/gemma-4-26b-a4b-it"
     RECIPE_GENERATION_MODEL = "openai/gpt-oss-20b"
     REQUEST_TIMEOUT = 120
 

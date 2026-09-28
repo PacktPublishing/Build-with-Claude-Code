@@ -38,7 +38,7 @@ class OpenRouterClient:
     ) -> str:
         """Send messages to a model and return the assistant text.
 
-        Free models drift into stray characters at high temperatures, so the
+        Small models drift into stray characters at high temperatures, so the
         default is deliberately low.
         """
         try:
@@ -59,7 +59,7 @@ class OpenRouterClient:
         if response.status_code == 401:
             raise OpenRouterError("Invalid API key. Check OPENROUTER_API_KEY in your .env file.")
         if response.status_code == 429:
-            raise OpenRouterError("Free-tier limit reached. Wait a moment and try again.")
+            raise OpenRouterError("Rate limit reached. Wait a moment and try again.")
         if not response.ok:
             raise OpenRouterError(f"OpenRouter returned {response.status_code}: {response.text[:200]}")
 
