@@ -12,8 +12,13 @@ DEMO_EMAIL = "demo@fridgechef.app"
 DEMO_PASSWORD = "demo1234"
 
 
+_HASH_ITERATIONS = 260_000
+
+
 def _hash(password: str, salt: str) -> str:
-    return hashlib.sha256((salt + password).encode()).hexdigest()
+    return hashlib.pbkdf2_hmac(
+        "sha256", password.encode(), salt.encode(), _HASH_ITERATIONS
+    ).hex()
 
 
 class AuthManager:
