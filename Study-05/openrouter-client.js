@@ -16,7 +16,7 @@ class OpenRouterClient {
     constructor(config = {}) {
         this.apiKey = config.apiKey || '';
         this.baseUrl = config.baseUrl || 'https://openrouter.ai/api/v1';
-        this.model = config.model || 'openai/gpt-oss-20b:free';
+        this.model = config.model || 'openai/gpt-oss-20b';
         this.maxRetries = config.maxRetries || 3;
         this.retryDelay = config.retryDelay || 1000;
         this.maxTokensPerRequest = config.maxTokensPerRequest || 4000;

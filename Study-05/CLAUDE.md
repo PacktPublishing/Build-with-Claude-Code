@@ -86,7 +86,7 @@ vercel dev
 ## API Integration
 
 ### OpenRouter Configuration
-- Model: `openai/gpt-oss-20b:free` (the original edition used `openai/gpt-oss-20b:free`, which OpenRouter has retired)
+- Model: `openai/gpt-oss-20b` (paid; OpenRouter retired the free `openai/gpt-oss-20b:free` variant)
 - Temperature: 0.7
 - Max tokens: 500
 

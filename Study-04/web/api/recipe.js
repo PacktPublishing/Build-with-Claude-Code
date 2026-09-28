@@ -73,7 +73,8 @@ export default async function handler(req, res) {
         }
 
         const requestBody = {
-            model: 'openai/gpt-oss-20b:free',
+            // Images go to the paid Gemma vision model (the free one is rate-limited); gpt-oss-20b reads text only
+            model: imageBase64 ? 'google/gemma-4-26b-a4b-it' : 'openai/gpt-oss-20b',
             messages: [
                 {
                     role: "user",

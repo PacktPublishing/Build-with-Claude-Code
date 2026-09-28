@@ -1,11 +1,11 @@
 # FridgeChef
 
-A Streamlit web app that recognizes ingredients in a fridge photo and generates recipes using free models on OpenRouter.
+A Streamlit web app that recognizes ingredients in a fridge photo and generates recipes using models on OpenRouter.
 
 ## Stack
 
 - **Image recognition**: `google/gemma-4-26b-a4b-it:free` (via OpenRouter)
-- **Recipe generation**: `openai/gpt-oss-20b:free` (via OpenRouter)
+- **Recipe generation**: `openai/gpt-oss-20b` (via OpenRouter, paid)
 - **UI**: Streamlit
 - **Storage**: SQLite (recipes) + JSON files (users, profiles, saved recipes)
 

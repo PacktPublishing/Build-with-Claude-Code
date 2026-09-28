@@ -658,7 +658,7 @@ I saved the API key I received from OpenRouter in the .env file. Please set it u
 ```
 Now test whether the prepared API actually works.
 For image recognition, use the google/gemma-4-26b-a4b-it:free model,
-For text generation, use the openai/gpt-oss-20b:free model.
+For text generation, use the openai/gpt-oss-20b model.
 Test both text and image recognition via the API and let me know the results.
 ```
 
@@ -668,7 +668,7 @@ Test both text and image recognition via the API and let me know the results.
 ```
 Using the previously created OpenRouter API, I want to build a web application that recognizes ingredients from a refrigerator photo and recommends recipes. Please create a PRD divided into three steps as follows.
 Step 1: Receive an image as input and use the google/gemma-4-26b-a4b-it:free model to recognize the image.
-Step 2: Use the information obtained in Step 1 and the openai/gpt-oss-20b:free model to generate recipes.
+Step 2: Use the information obtained in Step 1 and the openai/gpt-oss-20b model to generate recipes.
 Step 3: Create a user profile and save the recipes.
 Save each step as PRD_step1.md, PRD_step2.md, and PRD_step3.md.
 ```
@@ -757,7 +757,7 @@ Create five subagents in the .claude/agents/ folder. product-manager-prd writes 
 
 ```
 Please create an AI empathy diary application, where, if the user writes a one-line summary of their day, the AI analyzes their emotions, offers empathy, and provides words of comfort.
-The backend architect should implement the features for emotion analysis and empathetic message generation by integrating the OpenRouter API. Please use the free openai/gpt-oss-20b:free model and the API key stored in the .env file within the current directory.
+The backend architect should implement the features for emotion analysis and empathetic message generation by integrating the OpenRouter API. Please use the openai/gpt-oss-20b model and the API key stored in the .env file within the current directory.
 The frontend developer should design a diary UI that evokes a warm and comforting atmosphere.
 Finally, the QA engineer should test the application to ensure it functions smoothly across various scenarios. Any issues found must be fully resolved, and the final version should be delivered as an index.html file that can be opened directly in a web browser.
 ```
@@ -769,7 +769,7 @@ Finally, the QA engineer should test the application to ensure it functions smoo
 We're going to create a web application where you can upload a PDF document and the AI will summarize it.
 First, product-manager-prd will write a detailed PRD and feature specifications for the PDF document summary app and then the backend-architect will implement the PDF file upload and text extraction features.
 The ai-integration-specialist will integrate the OpenRouter API to summarize the extracted text.
-Use the free openai/gpt-oss-20b:free model, and use the API key stored in the '.env' file in the current folder. The frontend-developer will implement a drag-and-drop file upload UI and a clean interface to display the summary results.
+Use the openai/gpt-oss-20b model, and use the API key stored in the '.env' file in the current folder. The frontend-developer will implement a drag-and-drop file upload UI and a clean interface to display the summary results.
 The qa-engineer should test to ensure everything works smoothly in various scenarios. If any issues are found, fix them completely, and create the final version as an 'index_pdf.html' file that can be opened directly in the browser.
 ```
 

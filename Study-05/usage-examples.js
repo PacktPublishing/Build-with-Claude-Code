@@ -16,7 +16,7 @@ async function basicSummarizationExample() {
     const config = createConfig('development');
     const apiClient = new OpenRouterClient({
         apiKey: 'sk-or-v1-your-api-key-here',
-        model: 'openai/gpt-oss-20b:free'
+        model: 'openai/gpt-oss-20b'
     });
 
     const summarizationService = new TextSummarizationService(apiClient, {
@@ -84,7 +84,7 @@ async function pdfProcessingExample() {
         });
 
         const tokenManager = new TokenManager({
-            model: 'openai/gpt-oss-20b:free',
+            model: 'openai/gpt-oss-20b',
             maxTokensPerRequest: 4000
         });
 
@@ -171,7 +171,7 @@ async function advancedConfigurationExample() {
 
     const apiClient = new OpenRouterClient({
         apiKey: 'sk-or-v1-your-api-key-here',
-        model: 'openai/gpt-oss-20b:free',
+        model: 'openai/gpt-oss-20b',
         maxRetries: 3,
         requestTimeout: 90000
     });

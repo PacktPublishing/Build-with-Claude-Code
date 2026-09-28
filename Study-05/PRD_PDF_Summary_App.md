@@ -311,7 +311,7 @@ const apiCall = {
     'Content-Type': 'application/json'
   },
   body: {
-    model: 'openai/gpt-oss-20b:free',
+    model: 'openai/gpt-oss-20b',
     messages: [
       {
         role: 'system',

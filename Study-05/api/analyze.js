@@ -79,7 +79,7 @@ Empathy Message: It sounds like you had a hard day. Feeling this way is complete
                 'X-Title': 'Empathy Diary App'
             },
             body: JSON.stringify({
-                model: 'openai/gpt-oss-20b:free',
+                model: 'openai/gpt-oss-20b',
                 messages: [
                     {
                         role: 'user',

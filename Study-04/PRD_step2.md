@@ -16,7 +16,7 @@ Turn the ingredient list from Step 1 into cookable recipes, and keep every gener
 ## 3. Technical direction
 
 - **UI**: Streamlit with four tabs - Ingredient recognition, Edit ingredients, Recipe generation, Recipe list
-- **Recipe model**: `openai/gpt-oss-20b:free` on OpenRouter
+- **Recipe model**: `openai/gpt-oss-20b` on OpenRouter
 - **Vision model**: unchanged from Step 1, `google/gemma-4-26b-a4b-it:free`
 - **Storage**: SQLite file `recipes.db`, created automatically on first run
 

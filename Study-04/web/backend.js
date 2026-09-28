@@ -12,7 +12,8 @@ class FridgeRecipeBackend {
         // For development/local testing - direct API calls are possible locally
         this.apiKey = this.getApiKey();
         this.baseUrl = 'https://openrouter.ai/api/v1';
-        this.model = 'openai/gpt-oss-20b:free';
+        this.model = 'openai/gpt-oss-20b';
+        this.visionModel = 'google/gemma-4-26b-a4b-it';
     }
 
     /**
@@ -260,7 +261,8 @@ Response rules:
         }
 
         const requestBody = {
-            model: this.model,
+            // Images go to the paid Gemma vision model (the free one is rate-limited); gpt-oss-20b reads text only
+            model: imageBase64 ? this.visionModel : this.model,
             messages: [
                 {
                     role: "user",

@@ -859,7 +859,7 @@
 
                 <label for="modelSelect" class="form-label">AI Model</label>
                 <select id="modelSelect" class="form-select">
-                    <option value="openai/gpt-oss-20b:free">gpt-oss-20b (free)</option>
+                    <option value="openai/gpt-oss-20b">gpt-oss-20b</option>
                     <option value="google/gemini-2.0-flash-exp:free">Gemini 2.0 Flash (free)</option>
                 </select>
                 <p class="form-hint">Choose the AI model to use</p>
@@ -891,7 +891,7 @@
             summaryMode: 'normal',
             isProcessing: false,
             apiKey: localStorage.getItem('openrouter_api_key') || '[OpenRouter API key]',
-            selectedModel: localStorage.getItem('selected_model') || 'openai/gpt-oss-20b:free',
+            selectedModel: localStorage.getItem('selected_model') || 'openai/gpt-oss-20b',
             theme: localStorage.getItem('theme') || 'light'
         };
 
@@ -1148,7 +1148,7 @@ Key Points:
 • This is a demo summary
 • To get a real AI summary, set your API key
 • Click the settings button (⚙️) and enter your OpenRouter API key
-• The gpt-oss-20b model is free to use
+• The gpt-oss-20b model costs a fraction of a cent per summary
 • Connect the real API for more detailed summaries`;
 
             return demoSummary;

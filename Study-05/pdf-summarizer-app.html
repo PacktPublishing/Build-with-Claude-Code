@@ -433,8 +433,8 @@
                     <div class="form-group">
                         <label for="model">Model Selection</label>
                         <select id="model" class="form-control">
-                            <option value="openai/gpt-oss-20b:free">gpt-oss-20b (Recommended)</option>
-                            <option value="openai/gpt-oss-20b:free">gpt-oss-20b</option>
+                            <option value="openai/gpt-oss-20b">gpt-oss-20b (Recommended)</option>
+                            <option value="openai/gpt-oss-20b">gpt-oss-20b</option>
                         </select>
                     </div>
                 </div>
@@ -593,7 +593,7 @@
 
                 // Initialize token manager
                 this.tokenManager = new TokenManager({
-                    model: 'openai/gpt-oss-20b:free',
+                    model: 'openai/gpt-oss-20b',
                     maxTokensPerRequest: 4000,
                     costPerToken: 0.000001
                 });

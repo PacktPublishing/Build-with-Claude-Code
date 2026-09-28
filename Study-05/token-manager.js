@@ -15,7 +15,7 @@
 class TokenManager {
     constructor(config = {}) {
         this.config = {
-            model: config.model || 'openai/gpt-oss-20b:free',
+            model: config.model || 'openai/gpt-oss-20b',
             maxTokensPerRequest: config.maxTokensPerRequest || 4000,
             reserveTokensForResponse: config.reserveTokensForResponse || 1000,
             overlapTokens: config.overlapTokens || 200,

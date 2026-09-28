@@ -8,7 +8,7 @@ class EmpathyDiaryBackend {
         // Get the API key from environment variables (important for security)
         this.apiKey = this.getApiKey();
         this.baseUrl = 'https://openrouter.ai/api/v1';
-        this.model = 'openai/gpt-oss-20b:free';
+        this.model = 'openai/gpt-oss-20b';
 
         // CORS proxy options (used when needed)
         this.corsProxies = [

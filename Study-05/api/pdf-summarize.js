@@ -87,7 +87,7 @@ Response rules:
                 'X-Title': 'PDF Summarizer App'
             },
             body: JSON.stringify({
-                model: 'openai/gpt-oss-20b:free',
+                model: 'openai/gpt-oss-20b',
                 messages: [
                     {
                         role: 'user',

@@ -38,10 +38,10 @@ class AppConfig {
 
             // Model Configuration
             models: {
-                default: 'openai/gpt-oss-20b:free',
+                default: 'openai/gpt-oss-20b',
                 available: [
                     {
-                        id: 'openai/gpt-oss-20b:free',
+                        id: 'openai/gpt-oss-20b',
                         name: 'gpt-oss-20b',
                         description: 'High-performance chat model (recommended)',
                         costPerToken: 0.000001,
@@ -50,7 +50,7 @@ class AppConfig {
                         recommended: true
                     },
                     {
-                        id: 'openai/gpt-oss-20b:free',
+                        id: 'openai/gpt-oss-20b',
                         name: 'gpt-oss-20b',
                         description: 'Specialized for code and technical documents',
                         costPerToken: 0.000001,
